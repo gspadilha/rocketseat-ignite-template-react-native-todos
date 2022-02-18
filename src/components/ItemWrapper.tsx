@@ -25,16 +25,5 @@ export function ItemWrapper({ index, children }: ItemWrapperProps) {
       </LinearGradient>
     );
 
-  return (
-    <View
-      style={{
-        flex: 1,
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-between",
-      }}
-    >
-      {children}
-    </View>
-  );
+  return <View style={{ flex: 1 }}>{children}</View>;
 }
